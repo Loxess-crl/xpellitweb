@@ -1,0 +1,15 @@
+<div>
+  <mat-toolbar class="toolbar">
+    <span class="icon"></span>
+    <a class="title tab" (click)="nav()">XPELLIT</a>
+    <span class="example-spacer"></span>
+    <div class="tabs">
+      <a
+        *ngFor="let tab of menuItems"
+        [ngClass]="tab.onclick ? 'tab activo' : 'tab'"
+        (click)="nav(tab)"
+        >{{ tab.nombre }}</a
+      >
+    </div>
+  </mat-toolbar>
+</div>

@@ -1,0 +1,50 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.toolbar {
+  height: 8vh;
+  color: #fff;
+  background: #000814;
+  background: linear-gradient(90deg, #000814 0%, #051923 100%);
+}
+
+.icon{
+  margin-left: 2rem;
+  background-image: url("../../../assets/imgs/icon_xpellit.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.tab{
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 400;
+  transition: all 0.5s ease;
+
+}
+
+.tabs{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+.title{
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: 1rem;
+}
+
+.tabs .tab:hover{
+  color: #8194ac;
+}
+
+.tab.activo{
+  border-bottom: #829c9e 2px solid;
+  transition: all 0.5s ease;
+}
